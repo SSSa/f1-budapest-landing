@@ -16,6 +16,35 @@
             display: grid !important;
             gap: 0 !important;
         }
+
+        .disclaimer-box {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            color: #664d03;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .disclaimer-box a {
+            color: #0c63e4;
+            text-decoration: underline;
+        }
+
+        .disclaimer-box a:hover {
+            text-decoration: none;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
@@ -24,7 +53,7 @@
         <div class="container">
             <div class="header-content">
                 <h1>🏁 F1 Hungarian Grand Prix 2026</h1>
-                <p class="subtitle">Hungaroring, Budapest • July 25-27</p>
+                <p class="subtitle">Hungaroring, Budapest • July 24-26</p>
             </div>
         </div>
     </header>
@@ -47,18 +76,22 @@
                 <h2>Train Schedule</h2>
                 <p class="section-subtitle">Örs vezér tere → Szilasliget</p>
 
+                <div class="disclaimer-box">
+                    ⚠️ <strong>Important:</strong> Train times listed below are approximate and have not been verified against live <a href="https://bkk.hu" target="_blank">BKK (Budapest Transport Centre)</a> data. Please confirm schedule on the day of travel at bkk.hu or at the station.
+                </div>
+
                 <div class="schedule-tabs train-tabs">
-                    <button class="tab-button active" data-tab="train-friday">Friday 25th</button>
-                    <button class="tab-button" data-tab="train-saturday">Saturday 26th</button>
-                    <button class="tab-button" data-tab="train-sunday">Sunday 27th</button>
+                    <button class="tab-button active" data-tab="train-friday">Friday 24th</button>
+                    <button class="tab-button" data-tab="train-saturday">Saturday 25th</button>
+                    <button class="tab-button" data-tab="train-sunday">Sunday 26th</button>
                 </div>
 
                 <!-- Friday Train Schedule -->
                 <div id="train-friday" class="tab-content active">
-                    <h3>Friday, July 25th - H8 Tram: Örs vezér tere ⇄ Szilasliget</h3>
+                    <h3>Friday, July 24th - HÉV Suburban Rail Line: Örs vezér tere ⇄ Szilasliget</h3>
                     <p class="train-note">Workday schedule - Departures every 5-10 minutes</p>
 
-                    <h4 style="color: var(--f1-red); margin-top: 1.5rem;">🚂 Outbound: Örs vezér tere → Szilasliget (7:00 - 13:00)</h4>
+                    <h4 style="color: var(--f1-red); margin-top: 1.5rem;">🚂 Outbound: Örs vezér tere → Szilasliget (7:00 - 13:15)</h4>
                     <div class="train-schedule">
                         <div class="train-row">
                             <div class="departure">07:00</div>
@@ -133,6 +166,11 @@
                         <div class="train-row">
                             <div class="departure">12:30</div>
                             <div class="arrival">13:02</div>
+                            <div class="duration">32 min</div>
+                        </div>
+                        <div class="train-row">
+                            <div class="departure">13:00</div>
+                            <div class="arrival">13:32</div>
                             <div class="duration">32 min</div>
                         </div>
                     </div>
@@ -214,7 +252,7 @@
 
                 <!-- Saturday Train Schedule -->
                 <div id="train-saturday" class="tab-content">
-                    <h3>Saturday, July 26th - H8 Tram: Örs vezér tere ⇄ Szilasliget</h3>
+                    <h3>Saturday, July 25th - HÉV Suburban Rail Line: Örs vezér tere ⇄ Szilasliget</h3>
                     <p class="train-note">Weekend schedule - Departures every 10-15 minutes</p>
 
                     <h4 style="color: var(--f1-red); margin-top: 1.5rem;">🚂 Outbound: Örs vezér tere → Szilasliget (7:00 - 13:00)</h4>
@@ -448,11 +486,21 @@
 
                 <!-- Sunday Train Schedule -->
                 <div id="train-sunday" class="tab-content">
-                    <h3>Sunday, July 27th - H8 Tram: Örs vezér tere ⇄ Szilasliget</h3>
+                    <h3>Sunday, July 26th - HÉV Suburban Rail Line: Örs vezér tere ⇄ Szilasliget</h3>
                     <p class="train-note">Weekend schedule - Departures every 10-15 minutes</p>
 
-                    <h4 style="color: var(--f1-red); margin-top: 1.5rem;">🚂 Outbound: Örs vezér tere → Szilasliget (7:00 - 13:00)</h4>
+                    <h4 style="color: var(--f1-red); margin-top: 1.5rem;">🚂 Outbound: Örs vezér tere → Szilasliget (6:30 - 13:00)</h4>
                     <div class="train-schedule">
+                        <div class="train-row">
+                            <div class="departure">06:30</div>
+                            <div class="arrival">07:02</div>
+                            <div class="duration">32 min</div>
+                        </div>
+                        <div class="train-row">
+                            <div class="departure">06:45</div>
+                            <div class="arrival">07:17</div>
+                            <div class="duration">32 min</div>
+                        </div>
                         <div class="train-row">
                             <div class="departure">07:00</div>
                             <div class="arrival">07:32</div>
@@ -688,18 +736,23 @@
                 <h2>Weekend Schedule</h2>
                 <p class="section-subtitle">All Sessions & Events</p>
 
+                <p style="margin-bottom: 1.5rem; padding: 1rem; background-color: #f0f0f0; border-radius: 8px;">
+                    <strong>Thursday, July 23rd - 16:15–19:00:</strong> Pit Lane Walk (separately ticketed event)<br>
+                    <strong>Gates open:</strong> 07:30 daily | <strong>Gates close:</strong> 19:30 Fri–Sat, 20:00 Sun
+                </p>
+
                 <div class="schedule-tabs">
-                    <button class="tab-button active" data-tab="friday">Friday 25th</button>
-                    <button class="tab-button" data-tab="saturday">Saturday 26th</button>
-                    <button class="tab-button" data-tab="sunday">Sunday 27th</button>
+                    <button class="tab-button active" data-tab="friday">Friday 24th</button>
+                    <button class="tab-button" data-tab="saturday">Saturday 25th</button>
+                    <button class="tab-button" data-tab="sunday">Sunday 26th</button>
                 </div>
 
                 <!-- Friday Schedule -->
                 <div id="friday" class="tab-content active">
-                    <h3>Friday, July 25th</h3>
+                    <h3>Friday, July 24th</h3>
 
                     <div class="session">
-                        <div class="session-time">09:00 - 10:30</div>
+                        <div class="session-time">13:30 - 14:30</div>
                         <div class="session-details">
                             <h4>Free Practice 1</h4>
                             <p>First session of the weekend</p>
@@ -707,18 +760,10 @@
                     </div>
 
                     <div class="session">
-                        <div class="session-time">14:00 - 15:30</div>
+                        <div class="session-time">17:00 - 18:00</div>
                         <div class="session-details">
                             <h4>Free Practice 2</h4>
                             <p>Track acclimation and setup work</p>
-                        </div>
-                    </div>
-
-                    <div class="session fan-zone">
-                        <div class="session-time">16:00 - 22:00</div>
-                        <div class="session-details">
-                            <h4>🎵 Fan Zone Concert</h4>
-                            <p>Live music performances & entertainment</p>
                         </div>
                     </div>
 
@@ -729,14 +774,36 @@
                             <p>Food vendors, team merchandise, hospitality</p>
                         </div>
                     </div>
+
+                    <div style="background-color: #f9f9f9; padding: 1rem; border-radius: 8px; margin-top: 1.5rem;">
+                        <h4 style="color: var(--f1-red); margin-top: 0;">Support Series - Friday</h4>
+                        <div class="session">
+                            <div class="session-time">11:10 - 11:40</div>
+                            <div class="session-details">
+                                <h5>Formula 3</h5>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <div class="session-time">14:50 - 15:20</div>
+                            <div class="session-details">
+                                <h5>Formula 2</h5>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <div class="session-time">16:00 - 16:30</div>
+                            <div class="session-details">
+                                <h5>Porsche Supercup</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Saturday Schedule -->
                 <div id="saturday" class="tab-content">
-                    <h3>Saturday, July 26th</h3>
+                    <h3>Saturday, July 25th</h3>
 
                     <div class="session">
-                        <div class="session-time">10:00 - 11:00</div>
+                        <div class="session-time">12:30 - 13:30</div>
                         <div class="session-details">
                             <h4>Free Practice 3</h4>
                             <p>Final practice before qualifying</p>
@@ -744,7 +811,7 @@
                     </div>
 
                     <div class="session highlight">
-                        <div class="session-time">14:00 - 15:00</div>
+                        <div class="session-time">16:00 - 17:00</div>
                         <div class="session-details">
                             <h4>⚡ Qualifying Session</h4>
                             <p>Determine grid positions for race day</p>
@@ -752,60 +819,124 @@
                     </div>
 
                     <div class="session">
-                        <div class="session-time">16:30 - 17:30</div>
+                        <div class="session-time">17:00 - 18:00</div>
                         <div class="session-details">
-                            <h4>Grid Press Conference</h4>
+                            <h4>Post-Qualifying Press Conference</h4>
                             <p>Top 3 qualifiers interview & analysis</p>
                         </div>
                     </div>
 
-                    <div class="session fan-zone">
-                        <div class="session-time">17:00 - 23:00</div>
+                    <div class="session">
+                        <div class="session-time">All Day</div>
                         <div class="session-details">
-                            <h4>🎪 Fan Zone & Party</h4>
-                            <p>Live DJ, interactive activities, celebration</p>
+                            <h4>🍔 Food & Merchandise</h4>
+                            <p>Food vendors, team merchandise, hospitality</p>
+                        </div>
+                    </div>
+
+                    <div style="background-color: #f9f9f9; padding: 1rem; border-radius: 8px; margin-top: 1.5rem;">
+                        <h4 style="color: var(--f1-red); margin-top: 0;">Support Series - Saturday</h4>
+                        <div class="session">
+                            <div class="session-time">10:15 - 10:45</div>
+                            <div class="session-details">
+                                <h5>Formula 3</h5>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <div class="session-time">14:05 - 14:35</div>
+                            <div class="session-details">
+                                <h5>Formula 2</h5>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <div class="session-time">15:15 - 15:45</div>
+                            <div class="session-details">
+                                <h5>Porsche Supercup</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Sunday Schedule -->
                 <div id="sunday" class="tab-content">
-                    <h3>Sunday, July 27th</h3>
+                    <h3>Sunday, July 26th</h3>
 
                     <div class="session">
-                        <div class="session-time">10:00 - 12:00</div>
+                        <div class="session-time">13:00 - 13:30</div>
                         <div class="session-details">
-                            <h4>Pit Lane Walk</h4>
-                            <p>Access to paddock and team garages (limited tickets)</p>
+                            <h4>Drivers' Parade</h4>
+                            <p>Grid walk & fan interaction</p>
+                        </div>
+                    </div>
+
+                    <div class="session">
+                        <div class="session-time">14:44</div>
+                        <div class="session-details">
+                            <h4>National Anthem</h4>
+                            <p>Pre-race ceremony</p>
+                        </div>
+                    </div>
+
+                    <div class="session">
+                        <div class="session-time">~14:48</div>
+                        <div class="session-details">
+                            <h4>Flyover</h4>
+                            <p><em>Approximate time</em></p>
                         </div>
                     </div>
 
                     <div class="session highlight">
-                        <div class="session-time">15:00 - 16:50</div>
+                        <div class="session-time">15:00 - 17:00</div>
                         <div class="session-details">
                             <h4>🏎️ RACE DAY - Main Event</h4>
-                            <p>69 laps, 308.6 km on the Hungaroring circuit</p>
+                            <p>70 laps, 306.63 km (circuit length: 4.381 km)</p>
                         </div>
                     </div>
 
                     <div class="session">
-                        <div class="session-time">16:50+</div>
+                        <div class="session-time">~17:00+</div>
                         <div class="session-details">
                             <h4>Podium Ceremony</h4>
                             <p>Celebration & trophy presentations</p>
                         </div>
                     </div>
 
-                    <div class="session fan-zone">
-                        <div class="session-time">17:30 - 23:00</div>
+                    <div class="session">
+                        <div class="session-time">All Day</div>
                         <div class="session-details">
-                            <h4>🎉 Victory Celebration</h4>
-                            <p>Post-race concert and fan festivities</p>
+                            <h4>🍔 Food & Merchandise</h4>
+                            <p>Food vendors, team merchandise, hospitality</p>
+                        </div>
+                    </div>
+
+                    <div style="background-color: #f9f9f9; padding: 1rem; border-radius: 8px; margin-top: 1.5rem;">
+                        <h4 style="color: var(--f1-red); margin-top: 0;">Support Series - Sunday</h4>
+                        <div class="session">
+                            <div class="session-time">08:40 - 09:10</div>
+                            <div class="session-details">
+                                <h5>Formula 3</h5>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <div class="session-time">13:05 - 13:35</div>
+                            <div class="session-details">
+                                <h5>Formula 2</h5>
+                            </div>
+                        </div>
+                        <div class="session">
+                            <div class="session-time">14:00 - 14:30</div>
+                            <div class="session-details">
+                                <h5>Porsche Supercup</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="footer-note">
+            📍 Schedule based on official timetables from <a href="https://www.formula1.com" target="_blank">formula1.com</a> and <a href="https://www.hungaroring.hu" target="_blank">hungaroring.hu</a>
+        </div>
 
     </main>
 
