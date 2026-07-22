@@ -45,56 +45,6 @@
             padding-top: 2rem;
             border-top: 1px solid #ddd;
         }
-
-        .drivers-section {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            padding: 3rem 0;
-            margin: 2rem 0;
-        }
-
-        .drivers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 2rem;
-            padding: 0 1rem;
-        }
-
-        .driver-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            opacity: 0.9;
-            transition: all 0.3s ease;
-        }
-
-        .driver-card:hover {
-            opacity: 1;
-            transform: translateY(-8px);
-        }
-
-        .driver-photo {
-            width: 160px;
-            height: 200px;
-            border-radius: 12px;
-            object-fit: cover;
-            border: 3px solid var(--f1-red);
-            margin-bottom: 1rem;
-            box-shadow: 0 8px 24px rgba(220, 0, 0, 0.3);
-        }
-
-        .driver-name {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #fff;
-            margin-bottom: 0.3rem;
-        }
-
-        .driver-number {
-            font-size: 0.9rem;
-            color: var(--f1-red);
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
@@ -119,44 +69,6 @@
             </div>
         </nav>
 
-        <!-- Drivers Section -->
-        <section class="drivers-section">
-            <div class="container">
-                <h2 style="text-align: center; color: #fff; margin-bottom: 2rem;">Featured Drivers 🏁</h2>
-                <div class="drivers-grid">
-                    <div class="driver-card">
-                        <img src="https://media.formula1.com/image/upload/f_auto,c_thumb,w_500/ftr_2026_verstappen_max" alt="Max Verstappen" class="driver-photo">
-                        <div class="driver-name">Max Verstappen</div>
-                        <div class="driver-number">#1</div>
-                    </div>
-                    <div class="driver-card">
-                        <img src="https://media.formula1.com/image/upload/f_auto,c_thumb,w_500/ftr_2026_norris_lando" alt="Lando Norris" class="driver-photo">
-                        <div class="driver-name">Lando Norris</div>
-                        <div class="driver-number">#4</div>
-                    </div>
-                    <div class="driver-card">
-                        <img src="https://media.formula1.com/image/upload/f_auto,c_thumb,w_500/ftr_2026_hamilton_lewis" alt="Lewis Hamilton" class="driver-photo">
-                        <div class="driver-name">Lewis Hamilton</div>
-                        <div class="driver-number">#44</div>
-                    </div>
-                    <div class="driver-card">
-                        <img src="https://media.formula1.com/image/upload/f_auto,c_thumb,w_500/ftr_2026_leclerc_charles" alt="Charles Leclerc" class="driver-photo">
-                        <div class="driver-name">Charles Leclerc</div>
-                        <div class="driver-number">#16</div>
-                    </div>
-                    <div class="driver-card">
-                        <img src="https://media.formula1.com/image/upload/f_auto,c_thumb,w_500/ftr_2026_piastri_oscar" alt="Oscar Piastri" class="driver-photo">
-                        <div class="driver-name">Oscar Piastri</div>
-                        <div class="driver-number">#81</div>
-                    </div>
-                    <div class="driver-card">
-                        <img src="https://media.formula1.com/image/upload/f_auto,c_thumb,w_500/ftr_2026_sainz_carlos" alt="Carlos Sainz" class="driver-photo">
-                        <div class="driver-name">Carlos Sainz</div>
-                        <div class="driver-number">#55</div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Schedule Section -->
         <section id="schedule" class="section schedule-section">
